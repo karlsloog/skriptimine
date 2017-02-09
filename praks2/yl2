@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# kasutajate nimekiri kujul Perenimi, Eesnimi
+#
+# skripti algus
+#
+who | cut -f1 -d" " | cut -f2 -d"," > perenimi # lõikame perenimi - see on 2. element peale punkti ja salvetame faili
+#
+# skripti lõpp
+#
+
