@@ -2,8 +2,11 @@
 #
 # tervitusskript
 #
-echo -n "Tere, " # väljasta ilma reavahetuseta Tere, 
-echo -n "Karl" # väljasta ilma tevahetuseta user
-echo "!" #väljasta ! ja tee reavahetus
+# skriptialgus
+# ecgo "Tere Karl!"
+echo -n "Tere "
+echo -n ` whoami | cut -c1 | tr [:lower:] [:upper:]` # lõika esimene täht ja muuda suureks
+echo -n ` whoami | cut -c2-` # lõika kõik tähed alates 2-st
+echo "!"
 #
 #skripti lõpp
