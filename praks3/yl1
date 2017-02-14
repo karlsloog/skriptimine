@@ -2,6 +2,8 @@
 #
 # keskonna ja oma muutujate kasutamine
 #
-
+# kasutame keskonna muutuja nimega $USER
+# tervitame kasutajat
+echo "Tere, $USER!"
 #
 # skripti lõpp
