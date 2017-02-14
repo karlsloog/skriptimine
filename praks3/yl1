@@ -11,4 +11,9 @@ kuupaev=`date +'%d. %B'`
 # väljastame kuupäeva koos seletusega
 echo "Täna on $kuupaev"
 #
+# kella väärtuste loomine
+# defineerime vastava väärtusega muutuja
+kell=`date +'%H:%M'`
+# väljastame kell koos seletusega
+echo "Kell on $kell"
 # skripti lõpp
