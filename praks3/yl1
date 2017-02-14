@@ -5,5 +5,10 @@
 # kasutame keskonna muutuja nimega $USER
 # tervitame kasutajat
 echo "Tere, $USER!"
+# kuupäeva väärtuse loomine
+#defineerime vastava väärtusega muutuja
+kuupaev=`date +'%d. %B'`
+# väljastame kuupäeva koos seletusega
+echo "Täna on $kuupaev"
 #
 # skripti lõpp
