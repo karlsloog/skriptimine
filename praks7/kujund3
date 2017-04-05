@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# kolmnurk
+#
+# alumine pool
+echo "Sisesta ridade arv: "
+read ridade_arv
+for ((r=1; r<$(($ridade_arv + 1)); r++))
+do
+        for((t=1 ; t<$(($r+1)); t++))
+        do
+	 echo -n "* "
+        done
+	for((t=1; t<$(($ridade_arv - $r + 1)); t++))
+	do
+	 echo -n "o "
+	done
+         echo # reavahetus
+done
+
