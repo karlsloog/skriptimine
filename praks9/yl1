@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#
+echo -n "Sisesta kella aeg: "
+read h
+if [ $h -lt 12 ]; then
+  echo Tere Hommikust
+elif [ $h -lt 18 ]; then
+  echo Tere päevast
+else
+  echo Head ööd!
+fi
