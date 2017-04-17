@@ -3,10 +3,15 @@
 #
 echo -n "Sisesta kella aeg: "
 read h
-if [ $h -lt 12 ]; then
-  echo Tere Hommikust
-elif [ $h -lt 18 ]; then
-  echo Tere päevast
-else
+if [ $h -ge 6 -a $h -lt 12 ]; then
+  echo Tere Hommikust!
+elif [ $h -ge 12 -a $h -lt 18 ]; then
+  echo Tere päevast!
+elif [ $h -ge 18 -a $h -lt 22 ]; then
+  echo Tere õhtust!
+elif [ $h -ge 22 -a $h 24 ] || [ $h -ge 0 -a $h -lt 6]; then
   echo Head ööd!
+else
+  echo Vale Sisend!
 fi
+
