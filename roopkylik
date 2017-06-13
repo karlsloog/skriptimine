@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Karl Aleksander Sloog ISP16
+# Nimi: roopkylik
+# Väljasta rööpkülik
+#
+echo -n "sisesta ridade arv:"
+read rida
+	for ((r=1; r<$rida+1; r++))
+do
+echo -n "$r"
+	for (( v=1; v<$(($rida+1-$r+1)); v++))
+do
+echo -n " "
+done
+	for (( i = $rida; i <= $rida; i++))
+do
+	for (( j = 1 ; j <= i ; j++))
+do
+	echo -n "*"
+	done
+	done
+echo ""
+done
