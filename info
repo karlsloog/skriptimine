@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Karl Aleksander Sloog ISP16
+# skripti nimi: info
+#
+# Kasutaja tervitus
+echo "Tere $(whoami)"
+# kuupäev ja kellaaeg
+kell=`date +'%H:%M'`
+kuupaev=`date +'%D'`
+echo "Täna on $kuupaev kell $kell"
