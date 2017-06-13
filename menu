@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Karl Aleksander Sloog Isp16
+# skripti nimi: menu
+# Väljasta menu
+echo "menüü:
+)steak and potatoes
+)fish and chips
+)soup and salad"
+echo -n "please make a selection (1 or 2 or 3):"
+read valiku_nr
+	if [ $valiku_nr -eq 1 ]; then
+		echo "stick to your ribs."
+		echo "watch your cholesterole."
+		echo "enjoy your meal."
+else
+	 if [ $valiku_nr -eq 2 ]; then
+		echo "British are coming!"
+		echo "Enjoy tour meal!"
+else
+	 if [ $valiku_nr -eq 3 ]; then
+		echo "Healt foods..."
+		echo "Dieting is so boring."
+		echo "Enjoy your meal!"
+fi
+fi
+fi
